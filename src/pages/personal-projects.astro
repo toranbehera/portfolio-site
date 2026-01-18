@@ -1,41 +1,48 @@
 ---
-import Header from '../components/Header.astro';
-import Project from '../components/Project.astro';
-import Sidebar from '../components/Sidebar.astro';
+import Header from "../components/Header.astro";
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
     title: "CarbonIQ",
     desc: [
-      "Led the design and development of an offline-first, machine-learning powered Android app for a client to track and visualise vehicle emissions",
-      "Proposed and implemented frontend and system architecture decisions that streamlined development workflows and increased team productivity"
+      "Led an Agile team in the development of an Android app that tracks vehicle emissions",
+      "Designed a high-fidelity, fitness app-inspired UI/UX prototype using Figma",
+      "Devised systems architecture decisions that streamlined development workflows"
     ],
-    tech: ["React Native", "Expo", "TypeScript", "Figma", "InstantDB", "PythonAnywhere", "XGBoost"]
+    tech: ["React Native", "Expo", "TypeScript", "Figma", "InstantDB", "PythonAnywhere", "XGBoost"],
+    link: "https://github.com/toranbehera/CarbonIQ"
   },
   {
     title: "Medical Messenger",
     desc: [
-      "Built real-time messaging UI using React to enable healthcare communication",
-      "Enabled real-time communication with Socket.io and Node.js/Fastify",
-      "Build CI/CD pipeline to automate and streamline development workflow"
+      "Built a real-time messaging web app for healthcare communication",
+      "Enabled real-time communication using Socket.io and Node.js/Fastify",
+      "Built a CI/CD pipeline to automate development workflow",
+      "Managed pull requests, merge conflicts, and commit history rewrites in a Gitflow team environment"
     ],
-    tech: ["Next", "Shadcn", "Fastify", "Socket.io", "GitHub Actions", "Azure"]
+    tech: ["Next", "Shadcn", "Fastify", "Socket.io", "GitHub Actions", "Git", "GitHub", "Azure"],
+    link: "https://github.com/toranbehera/Medical-Messenger"
   },
   {
     title: "Not a Todo List",
     desc: [
-      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
-      "Sold over 700 items"
+      "Built a reusable React and Redux frontend template to reduce setup time for new projects",
+      "Also used to experiment with new tools and techniques that I come across from time to time"
     ],
-    tech: ["Python", "Selenium"]
+    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "JWT", "Redux"],
+    link: "https://github.com/toranbehera/not-a-todo-list"
   },
   {
     title: "Resting Koala Reservation",
     desc: [
-      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
-      "Sold over 700 items"
+      "Designed and implemented a table reservation feature using .NET (C#)",
+      "Translated UML and sequence diagrams into clean and maintainable backend code",
+      "Applied software design principles to model reservation flows, data validation, and edge cases"
     ],
-    tech: ["Python", "Selenium"]
-  }
+    tech: ["C#", ".NET"],
+    link: "https://github.com/toranbehera/RestingKoalaReservation"
+  },
 ];
 ---
 
@@ -63,6 +70,7 @@ const projects = [
                         title={project.title} 
                         desc={project.desc}
                         tech={project.tech}
+                        link={project.link}
                       />
                     ))}
                   </div>

@@ -204,6 +204,14 @@ ul {
     left: 0;
     right: 0;
     top: 92px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: transform 250ms ease, opacity 250ms ease;
+  }
+
+  .w-nav[data-collapse='medium'] .w-nav-menu.is-visible.is-open {
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .w-nav[data-collapse='medium'] .w-nav-button {

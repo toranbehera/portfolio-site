@@ -11,7 +11,9 @@ const projects = [
       "Contributed to RESTful API design and integration",
       "Mapped client's requirements into business process diagrams"
     ],
-    tech: ["React", "React Native", "Expo", "Tailwind", "Git", "GitHub", "Figma", "PostGreSQL", "Zustand", "Axios", "OAuth"]
+    tech: ["React", "React Native", "Expo", "Tailwind", "Git", "GitHub", "Figma", "PostGreSQL", "Zustand", "Axios", "OAuth"],
+    role: "Software Engineer Intern",
+    dates: "Jul 2024 — Present"
   },
   {
     title: "Focus Bear",
@@ -20,7 +22,9 @@ const projects = [
       "Worked within an Agile environment with CI/CD workflow and Git-based version control",
       "Optimised form validation and onboarding flows"
     ],
-    tech: ["React", "React Native", "Expo", "Tailwind", "Git", "GitHub", "Redux", "UseFormik", "Jest", "Axios", "JWT", "Express", "Node.js"]
+    tech: ["React", "React Native", "Expo", "Tailwind", "Git", "GitHub", "Redux", "UseFormik", "Jest", "Axios", "JWT", "Express", "Node.js"],
+    role: "React/React Native Developer Intern",
+    dates: "Aug 2025 — Nov 2025"
   },
   {
     title: "Swinburne Rover Team",
@@ -29,7 +33,9 @@ const projects = [
       "Transformed Figma designs into reusable components",
       "Ensured cross-browser compatibility, accessibility compliance, and a consistent design language across the site",
     ],
-    tech: ["React", "JavaScript", "MaterialUI", "HTML", "CSS", "Figma", "Git", "GitHub"]
+    tech: ["React", "JavaScript", "MaterialUI", "HTML", "CSS", "Figma", "Git", "GitHub"],
+    role: "Website Developer",
+    dates: "Jul 2024 — Jun 2024"
   }
 ];
 ---
@@ -58,6 +64,8 @@ const projects = [
                         title={project.title} 
                         desc={project.desc}
                         tech={project.tech}
+                        role={project.role}
+                        dates={project.dates}
                       />
                     ))}
                   </div>
