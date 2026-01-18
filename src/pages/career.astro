@@ -1,0 +1,72 @@
+---
+import Header from "../components/Header.astro";
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "YEMECompany Pty Ltd",
+    desc: [
+      "Developed responsive web and Android interfaces for loyalty payments with React/React Native and Zustand",
+      "Transformed high-fidelity designs into reusable React components",
+      "Contributed to RESTful API design and integration",
+      "Mapped client's requirements into business process diagrams"
+    ],
+    tech: ["React", "React Native", "Expo", "Tailwind", "Git", "GitHub", "Figma", "PostGreSQL", "Zustand", "Axios", "OAuth"]
+  },
+  {
+    title: "Focus Bear",
+    desc: [
+      "Helped resolve customer-facing issues for a productivity-focused mobile app",
+      "Worked within an Agile environment with CI/CD workflow and Git-based version control",
+      "Optimised form validation and onboarding flows"
+    ],
+    tech: ["React", "React Native", "Expo", "Tailwind", "Git", "GitHub", "Redux", "UseFormik", "Jest", "Axios", "JWT", "Express", "Node.js"]
+  },
+  {
+    title: "Swinburne Rover Team",
+    desc: [
+      "Helped build a mobile-responsive, component-based website that showcases the Swinburne Rover Team",
+      "Transformed Figma designs into reusable components",
+      "Ensured cross-browser compatibility, accessibility compliance, and a consistent design language across the site",
+    ],
+    tech: ["React", "JavaScript", "MaterialUI", "HTML", "CSS", "Figma", "Git", "GitHub"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Career | Toran Kumar Behera" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="software-development" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Career</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

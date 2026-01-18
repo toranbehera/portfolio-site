@@ -1,0 +1,77 @@
+---
+import Header from '../components/Header.astro';
+import Project from '../components/Project.astro';
+import Sidebar from '../components/Sidebar.astro';
+const projects = [
+  {
+    title: "CarbonIQ",
+    desc: [
+      "Led the design and development of an offline-first, machine-learning powered Android app for a client to track and visualise vehicle emissions",
+      "Proposed and implemented frontend and system architecture decisions that streamlined development workflows and increased team productivity"
+    ],
+    tech: ["React Native", "Expo", "TypeScript", "Figma", "InstantDB", "PythonAnywhere", "XGBoost"]
+  },
+  {
+    title: "Medical Messenger",
+    desc: [
+      "Built real-time messaging UI using React to enable healthcare communication",
+      "Enabled real-time communication with Socket.io and Node.js/Fastify",
+      "Build CI/CD pipeline to automate and streamline development workflow"
+    ],
+    tech: ["Next", "Shadcn", "Fastify", "Socket.io", "GitHub Actions", "Azure"]
+  },
+  {
+    title: "Not a Todo List",
+    desc: [
+      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
+      "Sold over 700 items"
+    ],
+    tech: ["Python", "Selenium"]
+  },
+  {
+    title: "Resting Koala Reservation",
+    desc: [
+      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
+      "Sold over 700 items"
+    ],
+    tech: ["Python", "Selenium"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Personal Projects | Toran Kumar Behera" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="personal-projects" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Personal Projects</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

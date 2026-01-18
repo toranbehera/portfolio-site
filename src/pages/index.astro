@@ -1,0 +1,98 @@
+---
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+---
+
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Toran Kumar Behera" />
+  <body>
+    <div class="content">
+      <Sidebar selectedItem="home" />
+      <nav class="main">
+        <div class="container">
+          <main class="fold-content-container">
+            <div class="fold-content">
+              <h1>Hi! I'm Toran.<br />I build things for the web.</h1>
+              <p class="lead">
+                Software Engineer focused on building optimised, user-friendly 
+                interfaces for the web. Besides learning 
+                new tools and tricks to improve my craft, I'm also a positive 
+                team player, avid problem-solver, and proactive contributor 
+                who never shies away from responsibility.
+              </p>
+            </div>
+            <div style="">
+              <a class="icon" href="mailto:toranbehera@gmail.com">
+                <img src="public/assets/email-svgrepo-com.svg" width="6%" alt="email_icon">
+              </a>
+              <a class="icon" href="https://github.com/toranbehera" target="_blank">
+                <img src="/public/assets/GitHub_Invertocat_White.svg" width="6%" alt="github_icon">
+              </a>
+              <a class="icon" href="https://www.linkedin.com/in/toran-kumar-behera-212150202/" target="_blank">
+                <img src="/public/assets/InBug-White.png" width="6%" alt="linkedin_icon">
+              </a>    
+            </div>                             
+          </main>
+          <div class="projects-section">
+            <!-- Software Development -->
+            <a href="/career" class="projects-container">
+              <div class="single-projects-category">
+                <div class="projects-category-image-container">
+                  <img src="./assets/browser.svg" loading="lazy" alt="" class="projects-category-image" />
+                </div>
+              </div>
+              <div class="single-projects-content">
+                <h4>Frontend Development</h4>
+                <div class="tech-tools-container">
+                  <div class="mini-label-white gray-color">Technologies &amp; tools</div>
+                  <div class="chips-container chips-container-small-width">
+                    <div class="single-chip small-chip">React</div>
+                    <div class="single-chip small-chip">Next</div>
+                    <div class="single-chip small-chip">Astro</div>
+                    <div class="single-chip small-chip">React Native</div>
+                    <div class="single-chip small-chip">Expo</div>
+                    <div class="single-chip small-chip">Redux</div>
+                    <div class="single-chip small-chip">Zustand</div>
+                    <div class="single-chip small-chip">MaterialUI</div>
+                    <div class="single-chip small-chip">Shadcn</div>
+                    <div class="single-chip small-chip">Figma</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- DevOps & Cloud -->
+            <a href="/career" class="projects-container">
+              <div class="single-projects-category">
+                <div class="projects-category-image-container devops-img">
+                  <img src="./assets/database.svg" loading="lazy" alt="" class="projects-category-image" />
+                </div>
+              </div>
+              <div class="single-projects-content">
+                <h4>Backend &amp;&nbsp;DevOps</h4>
+                <div class="tech-tools-container">
+                  <div class="mini-label-white gray-color">Technologies &amp; tools</div>
+                  <div class="chips-container chips-container-small-width">
+                    <div class="single-chip small-chip">GitHub</div>
+                    <div class="single-chip small-chip">Jest</div>
+                    <div class="single-chip small-chip">Express</div>
+                    <div class="single-chip small-chip">FastAPI</div>
+                    <div class="single-chip small-chip">MongoDB</div>
+                    <div class="single-chip small-chip">Postgres</div>
+                    <div class="single-chip small-chip">SQL</div>
+                    <div class="single-chip small-chip">Firebase</div>
+                    <div class="single-chip small-chip">InstantDB</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>
